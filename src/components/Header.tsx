@@ -6,7 +6,6 @@ interface HeaderProps {
   cartCount: number;
   onOpenCart: () => void;
   onOpenManager: () => void;
-  onOpenFeaturesDemo: () => void;
   searchTerm: string;
   onSearchChange: (value: string) => void;
 }
@@ -15,16 +14,15 @@ export const Header: React.FC<HeaderProps> = ({
   cartCount,
   onOpenCart,
   onOpenManager,
-  onOpenFeaturesDemo,
   searchTerm,
   onSearchChange,
 }) => {
   return (
     <header className="sticky top-0 z-40 bg-[#FAF8F5]/90 backdrop-blur-md border-b border-[#E7DECB] transition-all">
-      {/* Top Banner de aviso de frete / garantia */}
+      {/* Top Banner */}
       <div className="bg-[#2D2825] text-[#FAF8F5] text-[11px] font-medium tracking-widest uppercase py-1.5 px-4 text-center flex items-center justify-center gap-2">
         <Sparkles className="w-3.5 h-3.5 text-[#C4AA84]" />
-        <span>Joalheria Botânica Artesanal • Prata 925 & Flores Naturais Eternizadas</span>
+        <span>Biojoias Botânicas Artesanais • Flores & Elementos Naturais Eternizados</span>
       </div>
 
       <div className="max-w-6xl mx-auto px-4 py-3 sm:py-4 flex items-center justify-between gap-4">
@@ -65,16 +63,6 @@ export const Header: React.FC<HeaderProps> = ({
             <InstagramIcon className="w-4 h-4" />
             <span className="hidden lg:inline text-[11px] font-medium tracking-wide">@aurajoiasbotanicas</span>
           </a>
-
-          {/* Botão Ver Diferenciais / Componente */}
-          <button
-            onClick={onOpenFeaturesDemo}
-            title="Ver diferenciais da marca"
-            className="hidden sm:flex items-center gap-1.5 px-3 py-1.5 text-xs font-medium text-[#75583E] hover:text-[#2D2825] hover:bg-[#E7DECB]/50 border border-[#E7DECB] rounded-full transition-colors"
-          >
-            <Sparkles className="w-3.5 h-3.5 text-[#AD8D62]" />
-            <span>Diferenciais</span>
-          </button>
 
           {/* Área do Gerente */}
           <button

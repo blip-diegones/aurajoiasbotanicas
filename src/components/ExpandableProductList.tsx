@@ -171,7 +171,7 @@ export const ExpandableProductList: React.FC<ExpandableProductListProps> = ({
                           />
                           <div className="absolute top-3 left-3 flex flex-col gap-1.5">
                             <span className="bg-[#2D2825]/85 backdrop-blur-sm text-[#FAF8F5] text-[10px] uppercase tracking-wider font-semibold px-2.5 py-1 rounded-full">
-                              Prata 925
+                              Biojoia Artesanal
                             </span>
                             <span className="bg-[#4D8767]/90 backdrop-blur-sm text-white text-[10px] tracking-wider uppercase font-semibold px-2.5 py-1 rounded-full flex items-center gap-1">
                               <Leaf className="w-3 h-3" />

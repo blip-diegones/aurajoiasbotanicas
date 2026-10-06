@@ -5,7 +5,6 @@ import { Header } from "@/components/Header";
 import { ExpandableProductList } from "@/components/ExpandableProductList";
 import { CartDrawer, CartItem } from "@/components/CartDrawer";
 import { ManagerDashboard } from "@/components/ManagerDashboard";
-import { FeaturesModal } from "@/components/FeaturesModal";
 import {
   Sparkles,
   Leaf,
@@ -65,7 +64,6 @@ export function App() {
 
   const [isCartOpen, setIsCartOpen] = useState(false);
   const [isManagerOpen, setIsManagerOpen] = useState(false);
-  const [isFeaturesDemoOpen, setIsFeaturesDemoOpen] = useState(false);
 
   // Manipulação da Sacola
   const handleAddToCart = (product: Product) => {
@@ -165,7 +163,6 @@ export function App() {
         cartCount={cartTotalCount}
         onOpenCart={() => setIsCartOpen(true)}
         onOpenManager={() => setIsManagerOpen(true)}
-        onOpenFeaturesDemo={() => setIsFeaturesDemoOpen(true)}
         searchTerm={searchTerm}
         onSearchChange={setSearchTerm}
       />
@@ -175,7 +172,7 @@ export function App() {
         <div className="max-w-4xl mx-auto text-center space-y-4">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white border border-[#E7DECB] text-xs font-medium text-[#75583E] shadow-soft">
             <Leaf className="w-3.5 h-3.5 text-[#4D8767]" />
-            <span>Colheita Consciente & Prata 925 Legítima</span>
+            <span>Colheita Consciente & Acabamento Artesanal</span>
           </div>
 
           <h1 className="font-serif text-3xl sm:text-5xl lg:text-6xl text-[#2D2825] font-normal tracking-tight leading-tight">
@@ -381,7 +378,7 @@ export function App() {
             </span>
             <p className="leading-relaxed text-[#5C4633]">
               Joalheria botânica contemporânea. Cada peça é um relicário natural
-              confeccionado em prata de lei 925 e resina de qualidade joalheira.
+              confeccionado com cordão regulável e resina botânica de alta qualidade.
             </p>
             <div className="flex items-center gap-3 pt-1">
               <a
@@ -457,12 +454,6 @@ export function App() {
           onClose={() => setIsManagerOpen(false)}
         />
       )}
-
-      {/* MODAL DO COMPONENTE FEATURES SOLICITADO */}
-      <FeaturesModal
-        isOpen={isFeaturesDemoOpen}
-        onClose={() => setIsFeaturesDemoOpen(false)}
-      />
     </div>
   );
 }

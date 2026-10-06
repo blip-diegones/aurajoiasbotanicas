@@ -63,8 +63,8 @@ export const ManagerDashboard: React.FC<ManagerDashboardProps> = ({
     image: "/products/colar-cafe.jpg",
     description: "",
     botanicSpecimen: "",
-    material: "Prata 925 & Resina Cristalina UV",
-    dimensions: "Pingente: 2,5 cm | Corrente: 45 cm",
+    material: "Cordão Regulável & Resina Cristalina UV",
+    dimensions: "Pingente: 2,5 cm | Cordão ajustável",
     isPaused: false,
     isFeatured: false,
     stock: 5,
@@ -111,8 +111,8 @@ export const ManagerDashboard: React.FC<ManagerDashboardProps> = ({
       image: presetImages[0].path,
       description: "",
       botanicSpecimen: "",
-      material: "Prata 925 & Resina Cristalina UV",
-      dimensions: "Pingente: 2,5 cm | Corrente: 45 cm",
+      material: "Cordão Regulável & Resina Cristalina UV",
+      dimensions: "Pingente: 2,5 cm | Cordão ajustável",
       isPaused: false,
       isFeatured: false,
       stock: 5,
@@ -135,7 +135,7 @@ export const ManagerDashboard: React.FC<ManagerDashboardProps> = ({
     const saved: Product = {
       id: formData.id || "prod-" + Date.now(),
       name: formData.name || "Novo Anúncio Botânico",
-      subtitle: formData.subtitle || "Biojoia em Prata 925",
+      subtitle: formData.subtitle || "Biojoia Artesanal Botânica",
       category: (formData.category as any) || "Colares",
       price: Number(formData.price) || 0,
       originalPrice: formData.originalPrice ? Number(formData.originalPrice) : undefined,
@@ -143,9 +143,9 @@ export const ManagerDashboard: React.FC<ManagerDashboardProps> = ({
       additionalImages: formData.additionalImages || [],
       description:
         formData.description ||
-        "Peça artesanal botânica em Prata 925 com flor natural eternizada.",
+        "Peça artesanal botânica com cordão regulável e flor natural eternizada.",
       botanicSpecimen: formData.botanicSpecimen || "Espécime silvestre",
-      material: formData.material || "Prata 925 & Resina Cristalina UV",
+      material: formData.material || "Cordão Regulável & Resina Cristalina UV",
       dimensions: formData.dimensions || "Padrão Aura",
       isPaused: !!formData.isPaused,
       isFeatured: !!formData.isFeatured,
@@ -582,7 +582,7 @@ export const ManagerDashboard: React.FC<ManagerDashboardProps> = ({
                     onChange={(e) =>
                       setFormData({ ...formData, subtitle: e.target.value })
                     }
-                    placeholder="Ex: Pétalas Preservadas em Prata 925"
+                    placeholder="Ex: Pétalas Preservadas em Resina"
                     className="w-full px-3 py-2 rounded-xl border border-[#E7DECB] text-xs text-[#2D2825] focus:outline-none focus:ring-1 focus:ring-[#4D8767] bg-[#FAF8F5]"
                   />
                 </div>
@@ -647,7 +647,7 @@ export const ManagerDashboard: React.FC<ManagerDashboardProps> = ({
                     onChange={(e) =>
                       setFormData({ ...formData, material: e.target.value })
                     }
-                    placeholder="Prata 925 & Resina Cristalina UV"
+                    placeholder="Cordão Regulável & Resina Cristalina UV"
                     className="w-full px-3 py-2 rounded-xl border border-[#E7DECB] text-xs text-[#2D2825] focus:outline-none focus:ring-1 focus:ring-[#4D8767] bg-[#FAF8F5]"
                   />
                 </div>
