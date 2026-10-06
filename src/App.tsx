@@ -145,8 +145,6 @@ export function App() {
     const matchesCategory =
       activeCategory === "Todas"
         ? true
-        : activeCategory === "Destaques"
-        ? product.isFeatured
         : product.category === activeCategory;
 
     const matchesSearch =
@@ -196,8 +194,8 @@ export function App() {
           {/* Selos de Confiança Clean */}
           <div className="pt-4 flex flex-wrap items-center justify-center gap-4 sm:gap-8 text-xs text-[#75583E]">
             <div className="flex items-center gap-1.5">
-              <ShieldCheck className="w-4 h-4 text-[#AD8D62]" />
-              <span>Garantia vitalícia da Prata 925</span>
+              <Sparkles className="w-4 h-4 text-[#AD8D62]" />
+              <span>Design botânico autoral</span>
             </div>
             <div className="flex items-center gap-1.5">
               <Leaf className="w-4 h-4 text-[#4D8767]" />
@@ -217,7 +215,7 @@ export function App() {
         <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 pb-2 border-b border-[#E7DECB]">
           {/* Filtros de Categoria */}
           <div className="flex items-center gap-1.5 overflow-x-auto w-full sm:w-auto pb-2 sm:pb-0 scrollbar-none">
-            {(["Todas", "Colares", "Aneis", "Destaques"] as CategoryFilter[]).map(
+            {(["Todas", "Colares", "Aneis"] as CategoryFilter[]).map(
               (category) => (
                 <button
                   key={category}
@@ -398,15 +396,15 @@ export function App() {
             </div>
           </div>
 
-          {/* Garantia e Cuidados */}
+          {/* Cuidados e Envio */}
           <div className="space-y-2">
             <h4 className="font-serif text-base text-[#2D2825] font-semibold">
-              Garantia & Autenticidade
+              Cuidados & Envio
             </h4>
             <ul className="space-y-1.5 text-[#5C4633]">
-              <li>• Acompanha certificado de garantia da Prata 925</li>
-              <li>• Estojo de veludo exclusivo incluso em cada pedido</li>
+              <li>• Produção botânica 100% artesanal</li>
               <li>• Envio seguro para todo o Brasil</li>
+              <li>• Embalagem cuidadosa e protegida</li>
               <li>• Peças antialérgicas e sem níquel</li>
             </ul>
           </div>

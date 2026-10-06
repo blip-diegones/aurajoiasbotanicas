@@ -17,4 +17,4 @@ export interface Product {
   createdAt: string;
 }
 
-export type CategoryFilter = "Todas" | "Colares" | "Aneis" | "Destaques";
+export type CategoryFilter = "Todas" | "Colares" | "Aneis";

@@ -172,10 +172,6 @@ export const CartDrawer: React.FC<CartDrawerProps> = ({
                     })}
                   </span>
                 </div>
-                <div className="flex items-center justify-between text-xs text-[#75583E]">
-                  <span>Certificado de Garantia & Estojo</span>
-                  <span className="text-[#4D8767] font-medium">Incluso</span>
-                </div>
                 <div className="flex items-center justify-between text-base font-semibold text-[#2D2825] pt-2 border-t border-[#E7DECB]">
                   <span>Total</span>
                   <span>

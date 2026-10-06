@@ -69,7 +69,7 @@ export const Header: React.FC<HeaderProps> = ({
           {/* Botão Ver Diferenciais / Componente */}
           <button
             onClick={onOpenFeaturesDemo}
-            title="Ver diferenciais e garantia da marca"
+            title="Ver diferenciais da marca"
             className="hidden sm:flex items-center gap-1.5 px-3 py-1.5 text-xs font-medium text-[#75583E] hover:text-[#2D2825] hover:bg-[#E7DECB]/50 border border-[#E7DECB] rounded-full transition-colors"
           >
             <Sparkles className="w-3.5 h-3.5 text-[#AD8D62]" />
